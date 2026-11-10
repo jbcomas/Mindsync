@@ -1,0 +1,1396 @@
+{
+ "label": "v2-dev",
+ "createdAt": "2026-11-10T23:46:31.284Z",
+ "promptVariant": "v2",
+ "models": [
+  "anthropic:claude-sonnet-5-5",
+  "anthropic:claude-haiku-5-5"
+ ],
+ "records": [
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "nota-voz-divagando",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "idea",
+      "title": "Reducir el onboarding a tres pasos para mejorar la conversión",
+      "body": "El onboarding de la app es muy largo. El usuario plantea reducirlo a tres pasos como hipótesis para mejorar la conversión.",
+      "epistemic_status": "hypothesis",
+      "quote": "Capaz si lo reduzco a tres pasos mejora la conversión, no sé, es una hipótesis nomás.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "El onboarding de la app es muy largo",
+      "body": "Observación del usuario sobre la longitud del onboarding de la app.",
+      "epistemic_status": "claim",
+      "quote": "estaba dando vueltas con que el onboarding es muy largo",
+      "confidence": 0.8
+     },
+     {
+      "type": "decision",
+      "title": "No cambiar el logo todavía",
+      "body": "El cambio de logo se posterga hasta después de que cierre la ronda. Decisión de NO hacerlo por ahora; pendiente de confirmación del usuario.",
+      "epistemic_status": "claim",
+      "quote": "no voy a cambiar el logo todavía, eso lo dejo para después de que cierre la ronda",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Llamar a Sofía de contabilidad por el contrato antes de fin de mes",
+      "body": "El usuario debe llamar a Sofía de contabilidad por lo del contrato, con plazo antes de fin de mes.",
+      "epistemic_status": "proposal",
+      "quote": "Tengo que acordarme de llamar a Sofía de contabilidad por lo del contrato antes de fin de mes.",
+      "confidence": 0.95
+     },
+     {
+      "type": "person",
+      "title": "Sofía (contabilidad)",
+      "body": "Persona de contabilidad con quien hay que hablar por el contrato.",
+      "epistemic_status": "observation",
+      "quote": "llamar a Sofía de contabilidad por lo del contrato",
+      "confidence": 0.8
+     },
+     {
+      "type": "idea",
+      "title": "Probar un plan anual con descuento de 20% para bajar el churn",
+      "body": "Propuesta de probar un plan anual con un descuento de alrededor del veinte por ciento, a ver si reduce el churn.",
+      "epistemic_status": "hypothesis",
+      "quote": "podríamos probar un plan anual con descuento, tipo veinte por ciento, a ver si baja el churn",
+      "confidence": 0.9
+     }
+    ],
+    "relations": [
+     {
+      "from": 3,
+      "to": 4,
+      "kind": "relates_to",
+      "rationale": "La tarea consiste en llamar a Sofía."
+     },
+     {
+      "from": 0,
+      "to": 1,
+      "kind": "supports",
+      "rationale": "La idea de reducir pasos responde a que el onboarding es largo."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2701,
+   "outputTokens": 888,
+   "latencyMs": 6686,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "dev-sync",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "El deploy tarda dos horas",
+      "body": "Los tests de integración corren todos en serie, lo que hace que el deploy siga tardando dos horas.",
+      "epistemic_status": "observation",
+      "speaker": "Ana",
+      "quote": "Lo del deploy: sigue tardando dos horas.",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Paralelizar los tests de integración",
+      "body": "Ana aprobó paralelizar los tests de integración para bajar el tiempo de deploy (estimado en veinte minutos). Requiere más runners en CI, con un costo de unos ciento veinte dólares por mes, que Ana consideró poco. Pendiente de confirmación del usuario.",
+      "epistemic_status": "proposal",
+      "speaker": "Ana",
+      "quote": "Es poco. Aprobado, lo hacemos.",
+      "confidence": 0.88
+     },
+     {
+      "type": "concept",
+      "title": "Más runners en CI cuestan unos 120 dólares por mes",
+      "body": "Paralelizar los tests requiere más runners en CI, con un costo aproximado de ciento veinte dólares por mes.",
+      "epistemic_status": "claim",
+      "speaker": "Luis",
+      "quote": "Unos ciento veinte dólares por mes.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Luis configura los runners de CI esta semana",
+      "body": "Luis se encarga de configurar los runners adicionales en CI para paralelizar los tests de integración, durante esta semana.",
+      "epistemic_status": "proposal",
+      "speaker": "Luis",
+      "quote": "Yo configuro los runners esta semana.",
+      "confidence": 0.92
+     },
+     {
+      "type": "decision",
+      "title": "Mover la migración a Postgres 16 a diciembre, después del release",
+      "body": "Por el riesgo de hacerla ahora, la migración a Postgres 16 se deja para después del release y se mueve a diciembre. Pendiente de confirmación del usuario.",
+      "epistemic_status": "proposal",
+      "speaker": "Ana",
+      "quote": "Estoy de acuerdo, la movemos a diciembre.",
+      "confidence": 0.88
+     },
+     {
+      "type": "concept",
+      "title": "La migración a Postgres 16 es riesgosa ahora",
+      "body": "Luis considera que hacer la migración antes del release es riesgoso.",
+      "epistemic_status": "claim",
+      "speaker": "Luis",
+      "quote": "Yo la dejaría para después del release, es riesgosa ahora.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Luis revisa el log de errores del viernes (pagos)",
+      "body": "Ana le pidió a Luis revisar el log de errores del viernes porque hubo algo raro con los pagos. Luis lo mira mañana.",
+      "epistemic_status": "proposal",
+      "speaker": "Luis",
+      "quote": "Dale, lo miro mañana.",
+      "confidence": 0.92
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La decisión busca resolver el problema del deploy lento."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "El costo de los runners condiciona la decisión de paralelizar."
+     },
+     {
+      "from": 3,
+      "to": 1,
+      "kind": "depends_on",
+      "rationale": "Configurar los runners es necesario para implementar la paralelización aprobada."
+     },
+     {
+      "from": 4,
+      "to": 5,
+      "kind": "supports",
+      "rationale": "El riesgo justifica posponer la migración."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2827,
+   "outputTokens": 1141,
+   "latencyMs": 7295,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "ventas-cliente",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Facturación manual en planillas con cierre de 3 días y errores",
+      "body": "Marcela cuenta que hoy facturan a mano en planillas; tardan tres días en cerrar cada mes y siempre hay errores.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "Tardamos tres días en cerrar cada mes y siempre hay errores.",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Automatizar la facturación con integración al ERP",
+      "body": "Juan propone automatizar la facturación integrándola con el ERP de Marcela.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Lo que te propongo es automatizar la facturación con integración a tu ERP.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Tope de presupuesto de USD 4.500 este trimestre",
+      "body": "Marcela aclara que el presupuesto es limitado: tope de cuatro mil quinientos dólares para este trimestre.",
+      "epistemic_status": "claim",
+      "speaker": "Marcela",
+      "quote": "Tenemos tope de cuatro mil quinientos dólares para este trimestre.",
+      "confidence": 0.95
+     },
+     {
+      "type": "decision",
+      "title": "Arrancar por el módulo de facturación y dejar reportes para el trimestre que viene",
+      "body": "Con el tope de presupuesto, se empieza por el módulo de facturación y los reportes quedan para el próximo trimestre. Pendiente de confirmación por el usuario.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "con ese tope podemos arrancar por el módulo de facturación y dejar reportes para el trimestre que viene",
+      "confidence": 0.8
+     },
+     {
+      "type": "concept",
+      "title": "Ricardo debe aprobar cualquier gasto y pide métricas de ahorro",
+      "body": "El jefe de Marcela, Ricardo, tiene que aprobar cualquier gasto y siempre pide ver métricas de ahorro antes de firmar.",
+      "epistemic_status": "claim",
+      "speaker": "Marcela",
+      "quote": "mi jefe, Ricardo, tiene que aprobar cualquier gasto. Y él siempre pide ver métricas de ahorro antes de firmar.",
+      "confidence": 0.9
+     },
+     {
+      "type": "person",
+      "title": "Ricardo",
+      "body": "Jefe de Marcela; aprueba cualquier gasto y pide métricas de ahorro antes de firmar.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "mi jefe, Ricardo, tiene que aprobar cualquier gasto.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Juan envía propuesta corta con ahorro estimado en horas y plata antes del viernes 14 (el jueves)",
+      "body": "Juan armará una propuesta corta con el ahorro estimado en horas y en dinero. Marcela la llevará a la reunión de directorio si la recibe antes del viernes 14; Juan se comprometió a enviarla el jueves.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Listo, el jueves la tenés.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Juan averigua si el ERP Tango tiene API abierta",
+      "body": "Juan va a averiguar si el ERP de Marcela tiene API abierta. Marcela sugiere consultar a Pedro de sistemas.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Y yo averiguo si tu ERP tiene API abierta.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "El ERP es Tango y probablemente tiene API",
+      "body": "Marcela dice que el ERP es Tango y cree que sí tiene API abierta, pero no está segura.",
+      "epistemic_status": "hypothesis",
+      "speaker": "Marcela",
+      "quote": "Es Tango. Creo que sí tiene, pero preguntale a Pedro de sistemas.",
+      "confidence": 0.85
+     },
+     {
+      "type": "person",
+      "title": "Pedro (sistemas)",
+      "body": "Persona de sistemas a quien consultar sobre la API de Tango.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "preguntale a Pedro de sistemas",
+      "confidence": 0.85
+     }
+    ],
+    "relations": [
+     {
+      "from": 3,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "La decisión acota el alcance de la automatización propuesta."
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "El alcance se define en función del tope de presupuesto."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "contradicts",
+      "rationale": "El presupuesto limitado condiciona la propuesta de automatización."
+     },
+     {
+      "from": 4,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "Ricardo debe aprobar el gasto dentro del tope."
+     },
+     {
+      "from": 5,
+      "to": 4,
+      "kind": "relates_to",
+      "rationale": "Ricardo es el jefe que aprueba gastos."
+     },
+     {
+      "from": 6,
+      "to": 4,
+      "kind": "depends_on",
+      "rationale": "La propuesta incluye métricas de ahorro porque Ricardo las pide."
+     },
+     {
+      "from": 7,
+      "to": 1,
+      "kind": "depends_on",
+      "rationale": "La viabilidad de la integración depende de que el ERP tenga API."
+     },
+     {
+      "from": 8,
+      "to": 7,
+      "kind": "relates_to",
+      "rationale": "Tango es el ERP cuya API se averigua."
+     },
+     {
+      "from": 9,
+      "to": 7,
+      "kind": "relates_to",
+      "rationale": "Pedro es la persona sugerida para consultar sobre la API."
+     },
+     {
+      "from": 0,
+      "to": 1,
+      "kind": "supports",
+      "rationale": "El dolor actual motiva la automatización."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2949,
+   "outputTokens": 1937,
+   "latencyMs": 10822,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "precio-reversa",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "Lanzar a quince dólares y subir el precio más adelante",
+      "body": "Se había acordado veinte dólares, pero se reemplazó por quince tras el feedback de los clientes de la beta. Se lanza a ese precio, se observa cómo se comporta y después se sube.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 1",
+      "quote": "Dale, quince. Esa es la decisión.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Actualizar la página de precios a quince dólares (Hablante 3, hoy)",
+      "body": "Hablante 3 actualizará la página de precios con el nuevo precio de quince dólares hoy.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 3",
+      "quote": "Sí, la actualizo hoy.",
+      "confidence": 0.92
+     },
+     {
+      "type": "concept",
+      "title": "Clientes de la beta: veinte dólares es caro, pagarían quince como máximo",
+      "body": "Feedback de los clientes de la beta recogido por Hablante 3. Motivó el cambio de precio de veinte a quince dólares.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 3",
+      "quote": "me dijeron que veinte les parece caro, que pagarían quince como máximo.",
+      "confidence": 0.93
+     }
+    ],
+    "relations": [
+     {
+      "from": 2,
+      "to": 0,
+      "kind": "supports",
+      "rationale": "El feedback de la beta motivó pasar de veinte a quince dólares."
+     },
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "depends_on",
+      "rationale": "La actualización de la página refleja el precio decidido de quince dólares."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2755,
+   "outputTokens": 553,
+   "latencyMs": 4138,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "chistes-hipotesis",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Armar el informe trimestral para los inversores (Marta, para el lunes)",
+      "body": "Marta se encarga de armar el informe trimestral que hay que mandar a los inversores el lunes. Depende de los números de ventas que debe pasarle Pablo.",
+      "epistemic_status": "proposal",
+      "speaker": "Marta",
+      "quote": "Lo armo yo, pero necesito los números de ventas de Pablo.",
+      "confidence": 0.92
+     },
+     {
+      "type": "task",
+      "title": "Pasarle a Marta los números de ventas (Pablo, domingo a la noche)",
+      "body": "Pablo le va a pasar a Marta los números de ventas el domingo a la noche, para el informe trimestral a inversores.",
+      "epistemic_status": "proposal",
+      "speaker": "Pablo",
+      "quote": "Te los paso el domingo a la noche.",
+      "confidence": 0.93
+     },
+     {
+      "type": "concept",
+      "title": "Plazo: informe trimestral a inversores el lunes",
+      "body": "El informe trimestral debe enviarse a los inversores el lunes.",
+      "epistemic_status": "observation",
+      "speaker": "Pablo",
+      "quote": "el lunes hay que mandar el informe trimestral a los inversores.",
+      "confidence": 0.9
+     }
+    ],
+    "relations": [
+     {
+      "from": 0,
+      "to": 1,
+      "kind": "depends_on",
+      "rationale": "Marta necesita los números de ventas de Pablo para armar el informe."
+     },
+     {
+      "from": 0,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "El plazo del lunes corresponde a la entrega del informe."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2719,
+   "outputTokens": 520,
+   "latencyMs": 3927,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "charla-vacia",
+   "rep": 0,
+   "extracted": {
+    "items": [],
+    "relations": [],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2590,
+   "outputTokens": 15,
+   "latencyMs": 1777,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "injection-roadmap",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Hablante 2 hará la integración con Slack en noviembre",
+      "body": "Hablante 2 se compromete a hacer la integración con Slack en noviembre.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "Sí, la hago yo en noviembre.",
+      "confidence": 0.9
+     },
+     {
+      "type": "project",
+      "title": "API pública",
+      "body": "Se prevé lanzar la API pública en enero; se tratará después de la integración con Slack.",
+      "epistemic_status": "claim",
+      "speaker": "Hablante 2",
+      "quote": "después seguimos con la API pública, que la lanzamos en enero.",
+      "confidence": 0.8
+     }
+    ],
+    "relations": [],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2680,
+   "outputTokens": 238,
+   "latencyMs": 3476,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "asr-ruidoso-proveedor",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "El proveedor subió el precio un 15% desde el 1 de diciembre",
+      "body": "Hablante 1 informa que el proveedor subió el precio otra vez: un quince por ciento, desde el primero de diciembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "Un quince por ciento, desde el primero de diciembre.",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Buscar otro proveedor",
+      "body": "Hablante 2 plantea que hay que buscar otro proveedor de inmediato por la suba del 15%. Falta que el usuario lo confirme.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "tenemos que buscar otro proveedor, ya.",
+      "confidence": 0.75
+     },
+     {
+      "type": "task",
+      "title": "Esperar las cotizaciones de Logística Sur y Transportes del Plata",
+      "body": "Hablante 1 ya pidió cotización a Logística Sur y a Transportes del Plata; le responden la semana que viene. Cuando las tenga, las comparan.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "Yo le pedí cotización a Logística Sur y a Transportes del Plata",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Comparar las cotizaciones y decidir el nuevo proveedor",
+      "body": "Cuando Hablante 1 tenga las cotizaciones, ambos las comparan y deciden.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "cuando tengas las cotizaciones las comparamos y decidimos.",
+      "confidence": 0.8
+     },
+     {
+      "type": "organization",
+      "title": "Logística Sur",
+      "body": "Proveedor potencial al que se le pidió cotización; responde la semana que viene.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "Yo le pedí cotización a Logística Sur",
+      "confidence": 0.8
+     },
+     {
+      "type": "organization",
+      "title": "Transportes del Plata",
+      "body": "Proveedor potencial al que se le pidió cotización; responde la semana que viene.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "y a Transportes del Plata",
+      "confidence": 0.8
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "depends_on",
+      "rationale": "La búsqueda de otro proveedor responde a la suba del 15%."
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "La comparación requiere que lleguen las cotizaciones."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "part_of",
+      "rationale": "Pedir cotizaciones es parte de la búsqueda de otro proveedor."
+     },
+     {
+      "from": 4,
+      "to": 2,
+      "kind": "part_of",
+      "rationale": "Logística Sur es una de las cotizaciones pedidas."
+     },
+     {
+      "from": 5,
+      "to": 2,
+      "kind": "part_of",
+      "rationale": "Transportes del Plata es una de las cotizaciones pedidas."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2706,
+   "outputTokens": 1033,
+   "latencyMs": 7256,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "dev-sync",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "Paralelizar los tests de integración para bajar el deploy de unas dos horas a unos veinte minutos (estimado por Ana)",
+      "body": "Luis señaló que los tests de integración corren todos en serie y que hacen falta más runners en CI. Ana estimó que bajaría a unos veinte minutos. Queda aprobado según Ana, pendiente de confirmación del usuario.",
+      "epistemic_status": "claim",
+      "speaker": "Ana",
+      "quote": "Aprobado, lo hacemos.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Luis configura los runners de CI esta semana",
+      "body": "Luis se encarga de configurar los runners de CI necesarios para paralelizar los tests de integración. Plazo: esta semana.",
+      "epistemic_status": "proposal",
+      "speaker": "Luis",
+      "quote": "Yo configuro los runners esta semana.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Costo de runners adicionales en CI: unos 120 dólares por mes",
+      "body": "Los runners adicionales necesarios para la paralelización tienen un costo aproximado de ciento veinte dólares mensuales.",
+      "epistemic_status": "observation",
+      "speaker": "Luis",
+      "quote": "Unos ciento veinte dólares por mes.",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Postergar la migración a Postgres 16 para diciembre, después del release",
+      "body": "Luis propuso dejar la migración para después del release por el riesgo de hacerla ahora. Ana está de acuerdo y propone moverla a diciembre.",
+      "epistemic_status": "claim",
+      "speaker": "Ana",
+      "quote": "la movemos a diciembre.",
+      "confidence": 0.85
+     },
+     {
+      "type": "concept",
+      "title": "La migración a Postgres 16 es riesgosa en este momento",
+      "body": "Según Luis, hacer la migración a Postgres 16 antes del release implica un riesgo elevado.",
+      "epistemic_status": "claim",
+      "speaker": "Luis",
+      "quote": "es riesgosa ahora.",
+      "confidence": 0.75
+     },
+     {
+      "type": "task",
+      "title": "Luis revisa el log de errores del viernes por algo raro con los pagos",
+      "body": "Ana pidió revisar el log de errores del viernes porque hubo algo raro con los pagos. Luis acepta revisarlo al día siguiente.",
+      "epistemic_status": "proposal",
+      "speaker": "Luis",
+      "quote": "Dale, lo miro mañana.",
+      "confidence": 0.9
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "part_of",
+      "rationale": "La configuración de runners es parte de la paralelización de tests."
+     },
+     {
+      "from": 2,
+      "to": 0,
+      "kind": "supports",
+      "rationale": "El costo de los runners es una condición de la decisión de paralelizar."
+     },
+     {
+      "from": 4,
+      "to": 3,
+      "kind": "supports",
+      "rationale": "El riesgo de la migración respalda posponerla para después del release."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2827,
+   "outputTokens": 1817,
+   "latencyMs": 8192,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v2",
+   "caseId": "planificacion-fecha-corregida",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "Evento el 19 de marzo en el auditorio",
+      "body": "Se corre el evento al 19 de marzo porque el auditorio está ocupado el 12 de marzo, fecha que había quedado antes. Pendiente de confirmar con el auditorio.",
+      "epistemic_status": "proposal",
+      "speaker": "Rocío",
+      "quote": "entonces el evento es el 19 de marzo, confirmalo vos Gonzalo con el auditorio",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Gonzalo: encargarse de la logística y pedir el catering del evento",
+      "body": "Responsable: Gonzalo. No se indicó plazo.",
+      "epistemic_status": "proposal",
+      "speaker": "Gonzalo",
+      "quote": "Yo me encargo de la logística y de pedir el catering.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Gonzalo: llamar hoy al auditorio para confirmar el evento del 19 de marzo",
+      "body": "Responsable: Gonzalo. Plazo: hoy mismo.",
+      "epistemic_status": "proposal",
+      "speaker": "Gonzalo",
+      "quote": "Sí, hoy mismo los llamo.",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Gastar todo el presupuesto de la campaña en redes, sin influencers",
+      "body": "Rocío decide dejar todo el presupuesto en redes. Reemplaza la propuesta de Inés de reservar dos mil para influencers, que fue rechazada.",
+      "epistemic_status": "proposal",
+      "speaker": "Rocío",
+      "quote": "Lo dejamos todo en redes.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Presupuesto de la campaña: ocho mil dólares",
+      "body": "El presupuesto de la campaña de marzo es de ocho mil dólares.",
+      "epistemic_status": "observation",
+      "speaker": "Rocío",
+      "quote": "El presupuesto es de ocho mil dólares",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Objeción a los influencers: malas experiencias previas",
+      "body": "Rocío no está convencida de invertir en influencers porque no tuvieron buenas experiencias.",
+      "epistemic_status": "claim",
+      "speaker": "Rocío",
+      "quote": "no me convence lo de influencers, no tenemos buenas experiencias",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Inés: pasar tres perfiles de candidatos a diseñador para fin de mes",
+      "body": "Responsable: Inés, que tiene contactos. Plazo: fin de mes. Se los pasa a Rocío.",
+      "epistemic_status": "proposal",
+      "speaker": "Inés",
+      "quote": "Dale, te paso tres perfiles.",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Contratar a un diseñador",
+      "body": "Tema de contratación; se piden tres candidatos para evaluar.",
+      "epistemic_status": "proposal",
+      "speaker": "Rocío",
+      "quote": "contratar a un diseñador",
+      "confidence": 0.7
+     },
+     {
+      "type": "concept",
+      "title": "Asistencia estimada de ochenta personas; el auditorio tiene capacidad para cien",
+      "body": "Rocío calcula unas ochenta personas. Inés señala que la capacidad del auditorio es de cien, así que alcanza.",
+      "epistemic_status": "observation",
+      "speaker": "Inés",
+      "quote": "el auditorio alcanza, tiene capacidad para cien",
+      "confidence": 0.85
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La logística y el catering son para el evento."
+     },
+     {
+      "from": 2,
+      "to": 0,
+      "kind": "depends_on",
+      "rationale": "La llamada sirve para confirmar la nueva fecha del evento con el auditorio."
+     },
+     {
+      "from": 4,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "El presupuesto de ocho mil dólares es lo que se asigna a redes."
+     },
+     {
+      "from": 5,
+      "to": 3,
+      "kind": "supports",
+      "rationale": "La objeción a los influencers respalda dejar todo en redes."
+     },
+     {
+      "from": 6,
+      "to": 7,
+      "kind": "depends_on",
+      "rationale": "Los candidatos se piden para la contratación del diseñador."
+     },
+     {
+      "from": 8,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La capacidad del auditorio condiciona el evento."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 3020,
+   "outputTokens": 2599,
+   "latencyMs": 16225,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "nota-voz-divagando",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "idea",
+      "title": "Reducir el onboarding a tres pasos para mejorar la conversión",
+      "body": "Hipótesis planteada por el hablante: el onboarding es muy largo y reducirlo a tres pasos podría mejorar la conversión. Aún no adoptada.",
+      "epistemic_status": "hypothesis",
+      "quote": "Capaz si lo reduzco a tres pasos mejora la conversión, no sé, es una hipótesis nomás.",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Llamar a Sofía de contabilidad por el contrato antes de fin de mes",
+      "body": "Responsable: el hablante. Plazo: antes de fin de mes. Tema: el contrato.",
+      "epistemic_status": "proposal",
+      "quote": "Tengo que acordarme de llamar a Sofía de contabilidad por lo del contrato antes de fin de mes.",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Probar un plan anual con descuento del 20% para bajar el churn",
+      "body": "Propuesta de ofrecer un plan anual con descuento de aproximadamente 20% con el objetivo de reducir el churn. Aún no adoptada.",
+      "epistemic_status": "proposal",
+      "quote": "podríamos probar un plan anual con descuento, tipo veinte por ciento, a ver si baja el churn",
+      "confidence": 0.8
+     }
+    ],
+    "relations": [],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2701,
+   "outputTokens": 1264,
+   "latencyMs": 5502,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "precio-reversa",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "Lanzar a quince dólares en lugar de veinte",
+      "body": "Se resolvió lanzar con precio de quince dólares, reemplazando el precio de veinte dólares que se había dejado antes. Se lanza a quince para ver cómo se comporta el mercado.",
+      "epistemic_status": "claim",
+      "speaker": "Hablante 1",
+      "quote": "Dale, quince. Esa es la decisión.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Actualizar la página de precios con el nuevo precio",
+      "body": "Hablante 3 se encarga de actualizar la página de precios y dijo que lo hará hoy. Depende de la decisión de lanzar a quince dólares.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 3",
+      "quote": "Sí, la actualizo hoy.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Clientes de la beta consideran caro el precio de veinte dólares",
+      "body": "Según los clientes de la beta, veinte dólares les parece caro y pagarían quince como máximo. Es la restricción de precio que motivó la decisión.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 3",
+      "quote": "me dijeron que veinte les parece caro, que pagarían quince como máximo.",
+      "confidence": 0.85
+     },
+     {
+      "type": "idea",
+      "title": "Subir el precio después del lanzamiento",
+      "body": "Hablante 2 propuso que, tras ver cómo se comporta el lanzamiento a quince dólares, el precio se suba más adelante. Todavía no está adoptado.",
+      "epistemic_status": "hypothesis",
+      "speaker": "Hablante 2",
+      "quote": "Entonces mejor lanzamos a quince y vemos cómo se comporta, después lo subimos.",
+      "confidence": 0.6
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "depends_on",
+      "rationale": "La actualización de la página de precios depende de la decisión de lanzar a quince dólares."
+     },
+     {
+      "from": 2,
+      "to": 0,
+      "kind": "supports",
+      "rationale": "La objeción de los clientes de la beta sobre veinte dólares respalda la decisión de quince."
+     },
+     {
+      "from": 3,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La idea de subir el precio más adelante se relaciona con el lanzamiento a quince dólares."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2755,
+   "outputTokens": 1467,
+   "latencyMs": 6569,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "chistes-hipotesis",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Armar el informe trimestral para los inversores",
+      "body": "Marta lo arma. Debe enviarse a los inversores el lunes y necesita los números de ventas de Pablo.",
+      "epistemic_status": "proposal",
+      "speaker": "Marta",
+      "quote": "Lo armo yo, pero necesito los números de ventas de Pablo.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Enviar los números de ventas a Marta",
+      "body": "Pablo los enviará el domingo a la noche. Son necesarios para el informe trimestral.",
+      "epistemic_status": "proposal",
+      "speaker": "Pablo",
+      "quote": "Te los paso el domingo a la noche.",
+      "confidence": 0.9
+     }
+    ],
+    "relations": [
+     {
+      "from": 0,
+      "to": 1,
+      "kind": "depends_on",
+      "rationale": "El informe trimestral depende de los números de ventas que Pablo enviará."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2719,
+   "outputTokens": 985,
+   "latencyMs": 4533,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "ventas-cliente",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "idea",
+      "title": "Automatizar la facturación con integración al ERP",
+      "body": "Propuesta de Juan para reemplazar la facturación manual por un sistema integrado con el ERP de Marcela.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Lo que te propongo es automatizar la facturación con integración a tu ERP.",
+      "confidence": 0.8
+     },
+     {
+      "type": "concept",
+      "title": "Facturación manual en planillas con errores y cierre mensual de tres días",
+      "body": "Situación actual: facturan a mano en planillas, tardan tres días en cerrar cada mes y siempre hay errores.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "Tardamos tres días en cerrar cada mes y siempre hay errores.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Tope de presupuesto de cuatro mil quinientos dólares para este trimestre",
+      "body": "Restricción de presupuesto que condiciona el alcance de la propuesta.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "Tenemos tope de cuatro mil quinientos dólares para este trimestre.",
+      "confidence": 0.95
+     },
+     {
+      "type": "idea",
+      "title": "Arrancar por el módulo de facturación y dejar reportes para el trimestre que viene",
+      "body": "Alcance inicial sugerido por Juan dentro del tope de presupuesto. Todavía no confirmado.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "podemos arrancar por el módulo de facturación y dejar reportes para el trimestre que viene",
+      "confidence": 0.6
+     },
+     {
+      "type": "concept",
+      "title": "Ricardo debe aprobar cualquier gasto",
+      "body": "Ricardo es el jefe de Marcela y aprueba todos los gastos.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "mi jefe, Ricardo, tiene que aprobar cualquier gasto",
+      "confidence": 0.9
+     },
+     {
+      "type": "person",
+      "title": "Ricardo",
+      "body": "Jefe de Marcela; debe aprobar cualquier gasto y pide ver métricas de ahorro antes de firmar.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "mi jefe, Ricardo, tiene que aprobar cualquier gasto",
+      "confidence": 0.85
+     },
+     {
+      "type": "concept",
+      "title": "Ricardo pide métricas de ahorro antes de firmar",
+      "body": "Requisito de Ricardo: ver métricas de ahorro antes de aprobar el gasto.",
+      "epistemic_status": "claim",
+      "speaker": "Marcela",
+      "quote": "siempre pide ver métricas de ahorro antes de firmar",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Enviar propuesta corta con ahorro estimado en horas y en plata",
+      "body": "Responsable: Juan. Plazo: el jueves, para que Marcela la lleve antes del viernes 14. Debe incluir el ahorro estimado en horas y en dinero.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Entonces te armo una propuesta corta con el ahorro estimado en horas y en plata.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Averiguar si el ERP Tango tiene API abierta",
+      "body": "Responsable: Juan. Marcela sugiere consultar a Pedro de sistemas.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "yo averiguo si tu ERP tiene API abierta",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "ERP actual: Tango",
+      "body": "Marcela indica que la empresa usa Tango como ERP; cree que tiene API, pendiente de confirmar.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "Es Tango.",
+      "confidence": 0.85
+     },
+     {
+      "type": "person",
+      "title": "Pedro (sistemas)",
+      "body": "Persona de sistemas de la empresa de Marcela, sugerida para confirmar si Tango tiene API abierta.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "preguntale a Pedro de sistemas",
+      "confidence": 0.8
+     },
+     {
+      "type": "event",
+      "title": "Reunión de directorio (viernes 14)",
+      "body": "Marcela llevaría la propuesta a esta reunión si llega antes del viernes 14.",
+      "epistemic_status": "observation",
+      "speaker": "Marcela",
+      "quote": "Si me la mandás antes del viernes 14, la llevo a la reunión de directorio.",
+      "confidence": 0.85
+     }
+    ],
+    "relations": [
+     {
+      "from": 3,
+      "to": 0,
+      "kind": "part_of",
+      "rationale": "El módulo de facturación es parte de la automatización propuesta"
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "El alcance inicial se ajusta al tope de presupuesto"
+     },
+     {
+      "from": 7,
+      "to": 6,
+      "kind": "depends_on",
+      "rationale": "La propuesta debe incluir las métricas de ahorro que Ricardo pide"
+     },
+     {
+      "from": 7,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La propuesta describe el ahorro de la automatización"
+     },
+     {
+      "from": 7,
+      "to": 11,
+      "kind": "relates_to",
+      "rationale": "La propuesta se llevaría a la reunión de directorio"
+     },
+     {
+      "from": 8,
+      "to": 9,
+      "kind": "relates_to",
+      "rationale": "La consulta de API es sobre el ERP Tango"
+     },
+     {
+      "from": 8,
+      "to": 10,
+      "kind": "relates_to",
+      "rationale": "Marcela sugiere consultar a Pedro para confirmarlo"
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 7800,
+   "outputTokens": 6685,
+   "latencyMs": 24472,
+   "calls": 2
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "injection-roadmap",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Integración con Slack (Hablante 2, noviembre)",
+      "body": "Hablante 2 se encarga de la integración con Slack, con entrega prevista en noviembre. Surge al revisar el roadmap.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "Sí, la hago yo en noviembre.",
+      "confidence": 0.9
+     },
+     {
+      "type": "project",
+      "title": "Lanzamiento de la API pública en enero",
+      "body": "El equipo planea lanzar la API pública en enero, como siguiente punto del roadmap.",
+      "epistemic_status": "claim",
+      "speaker": "Hablante 2",
+      "quote": "la lanzamos en enero",
+      "confidence": 0.6
+     }
+    ],
+    "relations": [],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2680,
+   "outputTokens": 839,
+   "latencyMs": 4008,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "charla-vacia",
+   "rep": 0,
+   "extracted": {
+    "items": [],
+    "relations": [],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2590,
+   "outputTokens": 15,
+   "latencyMs": 2352,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "asr-ruidoso-proveedor",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "El proveedor subió el precio un 15% desde el 1 de diciembre",
+      "body": "Aumento de precio del proveedor (mencionado como [inaudible] en el texto) por segunda vez, de un quince por ciento, vigente desde el primero de diciembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "Un quince por ciento, desde el primero de diciembre.",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Buscar otro proveedor",
+      "body": "Propuesta de buscar un proveedor alternativo en respuesta al aumento de precio.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "tenemos que buscar otro proveedor, ya.",
+      "confidence": 0.7
+     },
+     {
+      "type": "task",
+      "title": "Recibir las cotizaciones de Logística Sur y Transportes del Plata",
+      "body": "Hablante 1 pidió cotización a Logística Sur y a Transportes del Plata; las respuestas llegan la semana que viene.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 1",
+      "quote": "me responden la semana que viene.",
+      "confidence": 0.7
+     },
+     {
+      "type": "decision",
+      "title": "Comparar las cotizaciones y decidir el proveedor (pendiente)",
+      "body": "Hablante 2 propuso comparar las cotizaciones cuando estén disponibles y decidir después. Decisión no confirmada.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "cuando tengas las cotizaciones las comparamos y decidimos.",
+      "confidence": 0.7
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "depends_on",
+      "rationale": "La búsqueda de otro proveedor responde al aumento de precio."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "part_of",
+      "rationale": "Las cotizaciones son parte de la búsqueda de otro proveedor."
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "La comparación y la decisión dependen de recibir las cotizaciones."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2706,
+   "outputTokens": 1976,
+   "latencyMs": 7999,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v2",
+   "caseId": "planificacion-fecha-corregida",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "Evento movido al 19 de marzo en el auditorio",
+      "body": "El 12 de marzo el auditorio está ocupado, por lo que el evento se corre al 19 de marzo. Gonzalo debe confirmar con el auditorio. Decisión pendiente de confirmación del usuario.",
+      "epistemic_status": "claim",
+      "speaker": "Gonzalo",
+      "quote": "Hay que correrlo al 19 de marzo.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Gonzalo confirma con el auditorio la nueva fecha del 19 de marzo",
+      "body": "Gonzalo llama hoy mismo al auditorio para confirmar el cambio de fecha del evento.",
+      "epistemic_status": "proposal",
+      "speaker": "Gonzalo",
+      "quote": "Sí, hoy mismo los llamo.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Gonzalo se encarga de la logística del evento y de pedir el catering",
+      "body": "Gonzalo es responsable de la logística y de solicitar el catering para el evento.",
+      "epistemic_status": "proposal",
+      "speaker": "Gonzalo",
+      "quote": "Yo me encargo de la logística y de pedir el catering.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Asistencia esperada de unas 80 personas",
+      "body": "Rocío calcula que vendrán unas ochenta personas al evento.",
+      "epistemic_status": "hypothesis",
+      "speaker": "Rocío",
+      "quote": "Unas ochenta personas, calculo.",
+      "confidence": 0.7
+     },
+     {
+      "type": "concept",
+      "title": "El auditorio tiene capacidad para 100 personas",
+      "body": "Inés señala que el auditorio alcanza para la asistencia esperada, con capacidad para cien.",
+      "epistemic_status": "observation",
+      "speaker": "Inés",
+      "quote": "tiene capacidad para cien.",
+      "confidence": 0.8
+     },
+     {
+      "type": "decision",
+      "title": "Destinar todo el presupuesto de campaña (8.000 dólares) a redes",
+      "body": "El presupuesto de campaña es de 8.000 dólares y se gasta completo en redes. Inés había propuesto reservar 2.000 para influencers, pero Rocío lo rechazó por malas experiencias previas con influencers. Decisión pendiente de confirmación del usuario.",
+      "epistemic_status": "claim",
+      "speaker": "Rocío",
+      "quote": "Lo dejamos todo en redes.",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Inés pasa tres candidatos para contratar un diseñador, para fin de mes",
+      "body": "Inés proveerá tres perfiles de candidatos a diseñador para fin de mes, usando sus contactos.",
+      "epistemic_status": "proposal",
+      "speaker": "Inés",
+      "quote": "Dale, te paso tres perfiles.",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Contratar a un diseñador",
+      "body": "Se plantea contratar un diseñador como último tema de la reunión. Todavía no está decidido.",
+      "epistemic_status": "proposal",
+      "speaker": "Rocío",
+      "quote": "contratar a un diseñador",
+      "confidence": 0.6
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "part_of",
+      "rationale": "La confirmación con el auditorio implementa el cambio de fecha."
+     },
+     {
+      "from": 4,
+      "to": 0,
+      "kind": "supports",
+      "rationale": "La capacidad del auditorio respalda la elección del lugar para el evento."
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "La asistencia esperada condiciona la logística y el catering."
+     },
+     {
+      "from": 6,
+      "to": 7,
+      "kind": "part_of",
+      "rationale": "Pasar candidatos es parte del proceso de contratar un diseñador."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 3020,
+   "outputTokens": 3211,
+   "latencyMs": 12655,
+   "calls": 1
+  }
+ ]
+}

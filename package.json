@@ -1,0 +1,19 @@
+{
+  "name": "mindsync",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "db:up": "docker compose up -d --wait db",
+    "db:down": "docker compose down",
+    "db:reset": "docker compose down -v && docker compose up -d --wait db && npm run db:migrate",
+    "db:migrate": "npm run migrate -w @mindsync/db",
+    "test": "npm run test --workspaces --if-present",
+    "dev": "npm run dev -w @mindsync/api",
+    "start": "npm run start -w @mindsync/api",
+    "db:clean-test-accounts": "npm run clean-test-accounts -w @mindsync/db --"
+  }
+}

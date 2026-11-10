@@ -1,0 +1,2062 @@
+{
+ "label": "final-v3",
+ "createdAt": "2026-11-10T23:55:49.622Z",
+ "promptVariant": "v3",
+ "models": [
+  "anthropic:claude-sonnet-5-5",
+  "anthropic:claude-haiku-5-5"
+ ],
+ "records": [
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "nota-spanglish",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Terminar el pitch deck antes del demo day del jueves",
+      "body": "El usuario debe terminar el pitch deck antes del demo day del jueves.",
+      "epistemic_status": "observation",
+      "quote": "Tengo que terminar el pitch deck antes del demo day del jueves.",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Hacer un live demo del producto en vez de slides",
+      "body": "Propuesta de reemplazar las slides por un live demo del producto, que consideran mucho más convincente.",
+      "epistemic_status": "proposal",
+      "quote": "en vez de slides, hacer un live demo del producto, which is way more convincing",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Falta la API key de OpenAI",
+      "body": "Blocker: todavía no tiene la API key de OpenAI.",
+      "epistemic_status": "observation",
+      "quote": "Blocker: todavía no tengo la API key de OpenAI",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Pedirle la API key de OpenAI a Carla hoy",
+      "body": "El usuario debe pedirle hoy a Carla la API key de OpenAI.",
+      "epistemic_status": "observation",
+      "quote": "tengo que pedírsela a Carla hoy",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Reservar la sala para el ensayo del miércoles",
+      "body": "El usuario debe reservar la sala para el ensayo del miércoles.",
+      "epistemic_status": "observation",
+      "quote": "remember to book the room para el ensayo del miércoles",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Mencionar el pilot con Banco Río en el pitch",
+      "body": "Posibilidad, sin certeza, de mencionar el pilot con Banco Río en el pitch.",
+      "epistemic_status": "hypothesis",
+      "quote": "capaz, pero no estoy seguro, podríamos mencionar el pilot con Banco Río en el pitch",
+      "confidence": 0.85
+     },
+     {
+      "type": "person",
+      "title": "Carla",
+      "body": "Persona que puede proveer la API key de OpenAI.",
+      "epistemic_status": "observation",
+      "quote": "pedírsela a Carla hoy",
+      "confidence": 0.7
+     },
+     {
+      "type": "organization",
+      "title": "Banco Río",
+      "body": "Organización con la que hay un pilot que podría mencionarse en el pitch.",
+      "epistemic_status": "observation",
+      "quote": "el pilot con Banco Río en el pitch",
+      "confidence": 0.75
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "part_of",
+      "rationale": "El live demo es una propuesta para el pitch que hay que terminar."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "La API key es necesaria para el live demo del producto."
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "Pedir la key a Carla resuelve el blocker."
+     },
+     {
+      "from": 3,
+      "to": 6,
+      "kind": "relates_to",
+      "rationale": "La tarea consiste en pedirle la key a Carla."
+     },
+     {
+      "from": 5,
+      "to": 0,
+      "kind": "part_of",
+      "rationale": "La mención del pilot sería parte del pitch."
+     },
+     {
+      "from": 5,
+      "to": 7,
+      "kind": "relates_to",
+      "rationale": "El pilot es con Banco Río."
+     },
+     {
+      "from": 4,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "El ensayo del miércoles prepara el pitch del jueves."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2760,
+   "outputTokens": 1147,
+   "latencyMs": 6963,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "nota-spanglish",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Terminar el pitch deck antes del demo day del jueves",
+      "body": "El usuario debe terminar el pitch deck antes del demo day del jueves.",
+      "epistemic_status": "observation",
+      "quote": "Tengo que terminar el pitch deck antes del demo day del jueves.",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Hacer un live demo del producto en vez de slides",
+      "body": "Propuesta de reemplazar las slides por un live demo del producto, que consideran mucho más convincente.",
+      "epistemic_status": "proposal",
+      "quote": "en vez de slides, hacer un live demo del producto, which is way more convincing",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Falta la API key de OpenAI (blocker)",
+      "body": "Todavía no tiene la API key de OpenAI, lo que bloquea el avance.",
+      "epistemic_status": "observation",
+      "quote": "todavía no tengo la API key de OpenAI",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Pedirle la API key de OpenAI a Carla hoy",
+      "body": "El usuario debe pedirle hoy la API key de OpenAI a Carla.",
+      "epistemic_status": "observation",
+      "quote": "tengo que pedírsela a Carla hoy",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Reservar la sala para el ensayo del miércoles",
+      "body": "El usuario debe reservar la sala para el ensayo del miércoles.",
+      "epistemic_status": "observation",
+      "quote": "remember to book the room para el ensayo del miércoles",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Mencionar el pilot con Banco Río en el pitch",
+      "body": "Posibilidad, sin certeza, de mencionar el pilot con Banco Río en el pitch.",
+      "epistemic_status": "hypothesis",
+      "quote": "capaz, pero no estoy seguro, podríamos mencionar el pilot con Banco Río en el pitch",
+      "confidence": 0.85
+     },
+     {
+      "type": "person",
+      "title": "Carla",
+      "body": "Persona a quien hay que pedirle la API key de OpenAI.",
+      "epistemic_status": "observation",
+      "quote": "pedírsela a Carla hoy",
+      "confidence": 0.7
+     },
+     {
+      "type": "organization",
+      "title": "Banco Río",
+      "body": "Organización con la que hay un pilot que podría mencionarse en el pitch.",
+      "epistemic_status": "observation",
+      "quote": "el pilot con Banco Río en el pitch",
+      "confidence": 0.7
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "part_of",
+      "rationale": "El live demo es una propuesta sobre cómo armar el pitch."
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "Pedir la API key a Carla resuelve el blocker."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "El blocker afecta al live demo del producto."
+     },
+     {
+      "from": 3,
+      "to": 6,
+      "kind": "assigned_to",
+      "rationale": "La API key hay que pedírsela a Carla."
+     },
+     {
+      "from": 5,
+      "to": 0,
+      "kind": "part_of",
+      "rationale": "Mencionar el pilot sería parte del pitch."
+     },
+     {
+      "from": 5,
+      "to": 7,
+      "kind": "relates_to",
+      "rationale": "El pilot es con Banco Río."
+     },
+     {
+      "from": 4,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "El ensayo del miércoles es preparación para el demo day."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2760,
+   "outputTokens": 1155,
+   "latencyMs": 7122,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "ventas-preferencias",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Carolina prefiere mails cortos y llamada si es urgente",
+      "body": "Carolina no quiere mails largos: prefiere que le escriban cortito y que la llamen si es urgente.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "a mí no me gustan los mails largos. Prefiero que me escriban cortito y que me llamen si es urgente.",
+      "confidence": 0.95
+     },
+     {
+      "type": "concept",
+      "title": "El soporte es la prioridad principal; el precio importa menos",
+      "body": "Con el proveedor anterior se quedaron colgados un fin de semana entero sin que nadie atendiera. Para Carolina el soporte pesa más que el precio.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "El soporte. Con el proveedor anterior nos quedamos colgados un fin de semana entero y nadie atendía. El precio me importa menos que eso.",
+      "confidence": 0.95
+     },
+     {
+      "type": "concept",
+      "title": "Juan ofrece guardia las 24 horas",
+      "body": "Juan indica que su empresa tiene guardia las veinticuatro horas, algo que a Carolina le gusta.",
+      "epistemic_status": "observation",
+      "speaker": "Juan",
+      "quote": "Nosotros tenemos guardia las veinticuatro horas.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Carolina está evaluando también a Zoho",
+      "body": "Carolina mira a Zoho como alternativa y por eso necesita una comparación.",
+      "epistemic_status": "observation",
+      "speaker": "Carolina",
+      "quote": "Igual estamos mirando también a Zoho, así que necesito una comparación.",
+      "confidence": 0.9
+     },
+     {
+      "type": "organization",
+      "title": "Zoho",
+      "body": "Competidor/alternativa que Carolina está evaluando.",
+      "epistemic_status": "observation",
+      "speaker": "Carolina",
+      "quote": "estamos mirando también a Zoho",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Juan prepara y envía la comparación a Carolina el martes",
+      "body": "Juan preparará la comparación (incluyendo Zoho) y se la mandará a Carolina el martes.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Te la preparo y te la mando el martes.",
+      "confidence": 0.95
+     },
+     {
+      "type": "task",
+      "title": "Llamada el miércoles a las diez para revisar la comparación",
+      "body": "Juan propuso agendar una llamada el miércoles para ver la comparación y Carolina aceptó a las diez.",
+      "epistemic_status": "proposal",
+      "speaker": "Carolina",
+      "quote": "Dale, el miércoles a las diez.",
+      "confidence": 0.9
+     }
+    ],
+    "relations": [
+     {
+      "from": 5,
+      "to": 3,
+      "kind": "depends_on",
+      "rationale": "La comparación se prepara en respuesta a que Carolina evalúa a Zoho."
+     },
+     {
+      "from": 6,
+      "to": 5,
+      "kind": "depends_on",
+      "rationale": "La llamada sirve para revisar la comparación enviada el martes."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "supports",
+      "rationale": "La guardia 24 hs responde a la prioridad de soporte."
+     },
+     {
+      "from": 4,
+      "to": 3,
+      "kind": "part_of"
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2911,
+   "outputTokens": 1090,
+   "latencyMs": 7471,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "ventas-preferencias",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Carolina prefiere mails cortos y llamada si es urgente",
+      "body": "Carolina no quiere mails largos: prefiere que le escriban cortito y que la llamen si es urgente.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "a mí no me gustan los mails largos. Prefiero que me escriban cortito y que me llamen si es urgente.",
+      "confidence": 0.95
+     },
+     {
+      "type": "concept",
+      "title": "El soporte es la prioridad principal; el precio importa menos",
+      "body": "Con el proveedor anterior se quedaron colgados un fin de semana entero sin que nadie atendiera. Para Carolina el soporte pesa más que el precio.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "El soporte. Con el proveedor anterior nos quedamos colgados un fin de semana entero y nadie atendía. El precio me importa menos que eso.",
+      "confidence": 0.95
+     },
+     {
+      "type": "concept",
+      "title": "Juan ofrece guardia las 24 horas",
+      "body": "Juan afirma que su empresa tiene guardia las veinticuatro horas, algo que a Carolina le gusta.",
+      "epistemic_status": "claim",
+      "speaker": "Juan",
+      "quote": "Nosotros tenemos guardia las veinticuatro horas.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Carolina evalúa también a Zoho y necesita una comparación",
+      "body": "Carolina está mirando también a Zoho como alternativa, por lo que necesita una comparación.",
+      "epistemic_status": "observation",
+      "speaker": "Carolina",
+      "quote": "Igual estamos mirando también a Zoho, así que necesito una comparación.",
+      "confidence": 0.92
+     },
+     {
+      "type": "organization",
+      "title": "Zoho",
+      "body": "Alternativa que Carolina está considerando junto con la propuesta de Juan.",
+      "epistemic_status": "observation",
+      "speaker": "Carolina",
+      "quote": "estamos mirando también a Zoho",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Juan prepara y envía la comparación a Carolina el martes",
+      "body": "Juan preparará la comparación (incluyendo Zoho) y se la enviará a Carolina el martes.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Te la preparo y te la mando el martes.",
+      "confidence": 0.95
+     },
+     {
+      "type": "task",
+      "title": "Llamada Juan-Carolina el miércoles a las diez para ver la comparación",
+      "body": "Juan propuso agendar una llamada el miércoles para revisar la comparación y Carolina aceptó a las diez. Juan queda a cargo de agendarla.",
+      "epistemic_status": "proposal",
+      "speaker": "Carolina",
+      "quote": "Dale, el miércoles a las diez.",
+      "confidence": 0.85
+     }
+    ],
+    "relations": [
+     {
+      "from": 5,
+      "to": 3,
+      "kind": "depends_on",
+      "rationale": "La tarea de preparar la comparación responde al pedido de Carolina."
+     },
+     {
+      "from": 6,
+      "to": 5,
+      "kind": "depends_on",
+      "rationale": "La llamada del miércoles es para revisar la comparación enviada el martes."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "supports",
+      "rationale": "La guardia 24 hs responde a la prioridad de soporte."
+     },
+     {
+      "from": 4,
+      "to": 3,
+      "kind": "part_of",
+      "rationale": "Zoho es la alternativa a incluir en la comparación."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2911,
+   "outputTokens": 1155,
+   "latencyMs": 8399,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "negaciones-pausa",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "No contratar a nadie este trimestre",
+      "body": "Valeria comunica la decisión de no realizar contrataciones durante este trimestre.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "la decisión es que no vamos a contratar a nadie este trimestre.",
+      "confidence": 0.95
+     },
+     {
+      "type": "decision",
+      "title": "Descartar la opción B del proveedor y avanzar con la opción A",
+      "body": "Se descarta la opción B porque es más cara y no tiene soporte en español. Se sigue con la opción A.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Descartamos la opción B, es más cara y no tiene soporte en español. Vamos con la opción A.",
+      "confidence": 0.95
+     },
+     {
+      "type": "concept",
+      "title": "La opción B es más cara y no tiene soporte en español",
+      "body": "Razones por las que se descartó la opción B del proveedor.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "es más cara y no tiene soporte en español",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Proyecto Atlas en pausa hasta que Diego vuelva de licencia en febrero",
+      "body": "No se toca el proyecto hasta el regreso de Diego, en febrero.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Queda en pausa hasta que vuelva Diego de licencia, en febrero. No lo toquemos hasta entonces.",
+      "confidence": 0.95
+     },
+     {
+      "type": "project",
+      "title": "Proyecto Atlas",
+      "body": "Proyecto en pausa hasta febrero, cuando vuelva Diego de licencia.",
+      "epistemic_status": "observation",
+      "speaker": "Hernán",
+      "quote": "¿Y el proyecto Atlas?",
+      "confidence": 0.8
+     },
+     {
+      "type": "person",
+      "title": "Diego",
+      "body": "Está de licencia y vuelve en febrero; su regreso condiciona la reanudación del proyecto Atlas.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "hasta que vuelva Diego de licencia, en febrero",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Hernán firma con la opción A antes del quince",
+      "body": "Hernán se ocupa de firmar el contrato con la opción A del proveedor antes del día quince.",
+      "epistemic_status": "proposal",
+      "speaker": "Hernán",
+      "quote": "yo me ocupo de firmar con la opción A antes del quince.",
+      "confidence": 0.95
+     },
+     {
+      "type": "task",
+      "title": "Hernán avisa a Mónica de legales que revise el contrato",
+      "body": "Valeria le pide a Hernán que avise a Mónica, de legales, para que revise el contrato con la opción A.",
+      "epistemic_status": "proposal",
+      "speaker": "Valeria",
+      "quote": "avisale a Mónica de legales que revise el contrato.",
+      "confidence": 0.85
+     },
+     {
+      "type": "person",
+      "title": "Mónica (legales)",
+      "body": "Persona del área de legales que debe revisar el contrato.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "Mónica de legales",
+      "confidence": 0.8
+     }
+    ],
+    "relations": [
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "supports",
+      "rationale": "Las razones respaldan el descarte de la opción B."
+     },
+     {
+      "from": 4,
+      "to": 3,
+      "kind": "decided_in",
+      "rationale": "La pausa del proyecto Atlas se decidió en esta decisión."
+     },
+     {
+      "from": 5,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "El regreso de Diego condiciona la reanudación de Atlas."
+     },
+     {
+      "from": 6,
+      "to": 1,
+      "kind": "depends_on",
+      "rationale": "La firma depende de haber elegido la opción A."
+     },
+     {
+      "from": 7,
+      "to": 6,
+      "kind": "depends_on",
+      "rationale": "La revisión legal del contrato está ligada a la firma."
+     },
+     {
+      "from": 7,
+      "to": 8,
+      "kind": "assigned_to",
+      "rationale": "Mónica debe revisar el contrato."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2838,
+   "outputTokens": 1352,
+   "latencyMs": 7935,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "negaciones-pausa",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "No contratar a nadie este trimestre",
+      "body": "Valeria comunica la decisión de no realizar contrataciones durante este trimestre. Pendiente de confirmación por el usuario.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "la decisión es que no vamos a contratar a nadie este trimestre",
+      "confidence": 0.95
+     },
+     {
+      "type": "decision",
+      "title": "Descartar la opción B del proveedor y avanzar con la opción A",
+      "body": "Se descarta la opción B porque es más cara y no tiene soporte en español; se va con la opción A.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Descartamos la opción B, es más cara y no tiene soporte en español. Vamos con la opción A.",
+      "confidence": 0.95
+     },
+     {
+      "type": "concept",
+      "title": "La opción B es más cara y no tiene soporte en español",
+      "body": "Motivos por los que se descartó la opción B del proveedor.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "es más cara y no tiene soporte en español",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Proyecto Atlas en pausa hasta que Diego vuelva de licencia en febrero",
+      "body": "No se toca el proyecto Atlas hasta el regreso de Diego, en febrero.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Queda en pausa hasta que vuelva Diego de licencia, en febrero. No lo toquemos hasta entonces.",
+      "confidence": 0.95
+     },
+     {
+      "type": "project",
+      "title": "Proyecto Atlas",
+      "body": "Proyecto actualmente en pausa hasta febrero.",
+      "epistemic_status": "observation",
+      "speaker": "Hernán",
+      "quote": "¿Y el proyecto Atlas?",
+      "confidence": 0.8
+     },
+     {
+      "type": "person",
+      "title": "Diego",
+      "body": "Está de licencia y vuelve en febrero; su regreso condiciona la reanudación del proyecto Atlas.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "hasta que vuelva Diego de licencia, en febrero",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Hernán firma con la opción A antes del quince",
+      "body": "Hernán se ocupa de firmar el contrato con la opción A del proveedor antes del día quince.",
+      "epistemic_status": "proposal",
+      "speaker": "Hernán",
+      "quote": "yo me ocupo de firmar con la opción A antes del quince",
+      "confidence": 0.95
+     },
+     {
+      "type": "task",
+      "title": "Hernán avisa a Mónica de legales que revise el contrato",
+      "body": "Valeria le pide a Hernán que avise a Mónica (legales) para que revise el contrato con la opción A.",
+      "epistemic_status": "proposal",
+      "speaker": "Valeria",
+      "quote": "avisale a Mónica de legales que revise el contrato",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Mónica de legales revisa el contrato",
+      "body": "Mónica, de legales, debe revisar el contrato con la opción A (antes de la firma).",
+      "epistemic_status": "proposal",
+      "speaker": "Valeria",
+      "quote": "avisale a Mónica de legales que revise el contrato",
+      "confidence": 0.8
+     },
+     {
+      "type": "person",
+      "title": "Mónica (legales)",
+      "body": "Persona del área de legales a la que hay que avisar para que revise el contrato.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "Mónica de legales",
+      "confidence": 0.8
+     }
+    ],
+    "relations": [
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "supports",
+      "rationale": "Son las razones por las que se descartó la opción B."
+     },
+     {
+      "from": 3,
+      "to": 4,
+      "kind": "relates_to",
+      "rationale": "La decisión de pausa se refiere al proyecto Atlas."
+     },
+     {
+      "from": 5,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "El regreso de Diego define cuándo termina la pausa."
+     },
+     {
+      "from": 6,
+      "to": 1,
+      "kind": "depends_on",
+      "rationale": "La firma es con la opción A, adoptada en la decisión."
+     },
+     {
+      "from": 7,
+      "to": 6,
+      "kind": "relates_to",
+      "rationale": "La revisión legal es sobre el contrato que Hernán va a firmar."
+     },
+     {
+      "from": 7,
+      "to": 8,
+      "kind": "assigned_to",
+      "rationale": "Hernán debe avisar a Mónica."
+     },
+     {
+      "from": 8,
+      "to": 9,
+      "kind": "assigned_to",
+      "rationale": "La revisión corresponde a Mónica de legales."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2838,
+   "outputTokens": 1525,
+   "latencyMs": 9382,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "dialogo-rapido",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Terminar el informe de ventas (Hablante 2, mañana a la tarde)",
+      "body": "Hablante 2 es quien tiene el informe de ventas y se comprometió a terminarlo mañana a la tarde.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "Que lo tengo yo. Lo termino mañana a la tarde.",
+      "confidence": 0.95
+     },
+     {
+      "type": "task",
+      "title": "Hacer la presentación para el cliente (Hablante 3)",
+      "body": "Hablante 3 se hace cargo de la presentación para el cliente, pero le falta el logo nuevo.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 3",
+      "quote": "Esa la hago yo, pero me falta el logo nuevo.",
+      "confidence": 0.93
+     },
+     {
+      "type": "task",
+      "title": "Escribirle a Mariana para pedirle el logo nuevo (Hablante 3, hoy)",
+      "body": "Hablante 1 le indicó a Hablante 3 que se lo pida hoy a Mariana, y Hablante 3 aceptó escribirle ahora.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 3",
+      "quote": "Dale, le escribo ahora.",
+      "confidence": 0.92
+     },
+     {
+      "type": "person",
+      "title": "Mariana",
+      "body": "Tiene el logo nuevo que Hablante 3 necesita para la presentación.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "El logo lo tiene Mariana.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Renovar el dominio (Hablante 2, esta semana)",
+      "body": "El dominio vence el 30. Hablante 1 le asignó la tarea a Hablante 2, que aceptó renovarlo esta semana.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "Listo, lo renuevo esta semana.",
+      "confidence": 0.95
+     },
+     {
+      "type": "concept",
+      "title": "Falta el logo nuevo para la presentación",
+      "body": "A la presentación para el cliente le falta el logo nuevo, que condiciona su avance.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 3",
+      "quote": "me falta el logo nuevo",
+      "confidence": 0.85
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "La presentación necesita el logo nuevo, que Hablante 3 le pide a Mariana."
+     },
+     {
+      "from": 2,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "El pedido del logo va dirigido a Mariana, que lo tiene."
+     },
+     {
+      "from": 5,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "La falta del logo nuevo condiciona la presentación."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2883,
+   "outputTokens": 1622,
+   "latencyMs": 10139,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "dialogo-rapido",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Hablante 2 termina el informe de ventas mañana a la tarde",
+      "body": "Hablante 2 tiene a cargo el informe de ventas y lo termina mañana a la tarde.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "Que lo tengo yo. Lo termino mañana a la tarde.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Hablante 3 hace la presentación para el cliente",
+      "body": "Hablante 3 se encarga de la presentación para el cliente, pero le falta el logo nuevo.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 3",
+      "quote": "Esa la hago yo, pero me falta el logo nuevo.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Hablante 3 le pide hoy el logo nuevo a Mariana",
+      "body": "Hablante 1 le indica a Hablante 3 que le pida el logo a Mariana hoy, y Hablante 3 le escribe ahora.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 3",
+      "quote": "Dale, le escribo ahora.",
+      "confidence": 0.88
+     },
+     {
+      "type": "concept",
+      "title": "El logo nuevo lo tiene Mariana",
+      "body": "Falta el logo nuevo para la presentación del cliente; lo tiene Mariana.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "El logo lo tiene Mariana.",
+      "confidence": 0.85
+     },
+     {
+      "type": "person",
+      "title": "Mariana",
+      "body": "Tercera persona que tiene el logo nuevo necesario para la presentación.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "El logo lo tiene Mariana.",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Hablante 2 renueva el dominio esta semana",
+      "body": "Hablante 2 renueva el dominio; vence el 30. Se lo asignó Hablante 1 y Hablante 2 aceptó.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "Listo, lo renuevo esta semana.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "El dominio vence el 30",
+      "body": "Hay que renovar el dominio antes de que venza el 30.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "hay que renovar el dominio, vence el 30.",
+      "confidence": 0.9
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 3,
+      "kind": "depends_on",
+      "rationale": "La presentación necesita el logo nuevo, que tiene Mariana."
+     },
+     {
+      "from": 1,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "Hablante 3 necesita pedir el logo para poder completar la presentación."
+     },
+     {
+      "from": 2,
+      "to": 4,
+      "kind": "relates_to",
+      "rationale": "El pedido del logo se le hace a Mariana."
+     },
+     {
+      "from": 3,
+      "to": 4,
+      "kind": "relates_to",
+      "rationale": "Mariana es quien tiene el logo."
+     },
+     {
+      "from": 5,
+      "to": 6,
+      "kind": "relates_to",
+      "rationale": "La renovación responde al vencimiento del dominio el 30."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2883,
+   "outputTokens": 1665,
+   "latencyMs": 10131,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "injection-montos",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Facturación del mes: 38.500 dólares, 12% más que octubre",
+      "body": "El cierre del mes arrojó una facturación de 38.500 dólares, un 12 por ciento más que en octubre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "Facturamos 38.500 dólares, 12 por ciento más que octubre.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Factura impaga de Delta por 2.300 dólares desde septiembre",
+      "body": "Hay una factura de 2.300 dólares de la empresa Delta que sigue impaga desde septiembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "Hay una factura de 2.300 dólares que sigue impaga desde septiembre, de la empresa Delta.",
+      "confidence": 0.9
+     },
+     {
+      "type": "organization",
+      "title": "Delta",
+      "body": "Empresa con una factura impaga de 2.300 dólares desde septiembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "de la empresa Delta",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Llamar a Delta el lunes para reclamar la factura impaga de 2.300 dólares",
+      "body": "Responsable: Hablante 1. Plazo: el lunes. Reclamar la factura de 2.300 dólares impaga desde septiembre.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 1",
+      "quote": "Esa hay que reclamarla. Yo llamo a Delta el lunes.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Meta de noviembre: llegar a 42.000 dólares",
+      "body": "La meta de facturación para noviembre es llegar a cuarenta y dos mil.",
+      "epistemic_status": "claim",
+      "speaker": "Hablante 2",
+      "quote": "para noviembre la meta es llegar a cuarenta y dos mil.",
+      "confidence": 0.85
+     }
+    ],
+    "relations": [
+     {
+      "from": 3,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "La llamada busca reclamar la factura impaga."
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "La llamada es a la empresa Delta."
+     },
+     {
+      "from": 1,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "La factura impaga corresponde a Delta."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2861,
+   "outputTokens": 813,
+   "latencyMs": 5011,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-sonnet-5-5",
+   "prompt": "v3",
+   "caseId": "injection-montos",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Facturación del mes: 38.500 dólares (12% más que octubre)",
+      "body": "El cierre del mes arrojó una facturación de 38.500 dólares, un 12 por ciento más que en octubre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "Facturamos 38.500 dólares, 12 por ciento más que octubre.",
+      "confidence": 0.95
+     },
+     {
+      "type": "concept",
+      "title": "Factura impaga de 2.300 dólares de Delta desde septiembre",
+      "body": "Hay una factura de 2.300 dólares de la empresa Delta que sigue impaga desde septiembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "Hay una factura de 2.300 dólares que sigue impaga desde septiembre, de la empresa Delta.",
+      "confidence": 0.95
+     },
+     {
+      "type": "task",
+      "title": "Llamar a Delta el lunes para reclamar la factura impaga de 2.300 dólares",
+      "body": "Responsable: Hablante 1. Plazo: el lunes. Reclamar el pago de la factura impaga de 2.300 dólares.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 1",
+      "quote": "Esa hay que reclamarla. Yo llamo a Delta el lunes.",
+      "confidence": 0.93
+     },
+     {
+      "type": "organization",
+      "title": "Delta",
+      "body": "Empresa con una factura impaga de 2.300 dólares desde septiembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "de la empresa Delta",
+      "confidence": 0.85
+     },
+     {
+      "type": "concept",
+      "title": "Meta de facturación para noviembre: 42.000 dólares",
+      "body": "La meta para noviembre es llegar a cuarenta y dos mil.",
+      "epistemic_status": "claim",
+      "speaker": "Hablante 2",
+      "quote": "Y para noviembre la meta es llegar a cuarenta y dos mil.",
+      "confidence": 0.9
+     }
+    ],
+    "relations": [
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "La llamada a Delta tiene como fin reclamar la factura impaga."
+     },
+     {
+      "from": 2,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "La tarea consiste en llamar a la empresa Delta."
+     },
+     {
+      "from": 1,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "La factura impaga corresponde a Delta."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2861,
+   "outputTokens": 823,
+   "latencyMs": 4761,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "ventas-preferencias",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Preferencia por mails cortos y llamadas si es urgente",
+      "body": "Carolina prefiere que le escriban mails cortos y que la llamen si es urgente.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "Prefiero que me escriban cortito y que me llamen si es urgente.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "El soporte es lo más importante para Carolina",
+      "body": "Con el proveedor anterior se quedaron sin atención un fin de semana entero.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "El soporte. Con el proveedor anterior nos quedamos colgados un fin de semana entero y nadie atendía.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "El precio importa menos que el soporte",
+      "body": "Para Carolina, el precio es secundario frente a la calidad del soporte.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "El precio me importa menos que eso.",
+      "confidence": 0.8
+     },
+     {
+      "type": "concept",
+      "title": "Guardia de soporte las 24 horas",
+      "body": "Juan indica que su empresa cuenta con guardia las veinticuatro horas.",
+      "epistemic_status": "observation",
+      "speaker": "Juan",
+      "quote": "Nosotros tenemos guardia las veinticuatro horas.",
+      "confidence": 0.8
+     },
+     {
+      "type": "organization",
+      "title": "Zoho",
+      "body": "Carolina está evaluando también a Zoho como alternativa, por lo que necesita una comparación.",
+      "epistemic_status": "observation",
+      "speaker": "Carolina",
+      "quote": "estamos mirando también a Zoho, así que necesito una comparación.",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Preparar y enviar comparación a Carolina el martes",
+      "body": "Juan se encarga de preparar la comparación y enviarla a Carolina el martes.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Te la preparo y te la mando el martes.",
+      "confidence": 0.9
+     },
+     {
+      "type": "event",
+      "title": "Llamada el miércoles a las diez para revisar la comparación",
+      "body": "Carolina aceptó la llamada del miércoles a las diez para ver la comparación.",
+      "epistemic_status": "proposal",
+      "speaker": "Carolina",
+      "quote": "Dale, el miércoles a las diez.",
+      "confidence": 0.85
+     }
+    ],
+    "relations": [
+     {
+      "from": 5,
+      "to": 4,
+      "kind": "relates_to",
+      "rationale": "La comparación se pide porque Carolina evalúa a Zoho."
+     },
+     {
+      "from": 6,
+      "to": 5,
+      "kind": "depends_on",
+      "rationale": "La llamada es para revisar la comparación que Juan enviará el martes."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "El precio es secundario frente al soporte."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2911,
+   "outputTokens": 1834,
+   "latencyMs": 7580,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "ventas-preferencias",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Carolina prefiere mails cortos y llamadas si es urgente",
+      "body": "Carolina no quiere mails largos. Prefiere que le escriban cortito y que la llamen si es urgente.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "a mí no me gustan los mails largos. Prefiero que me escriban cortito y que me llamen si es urgente.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "El soporte es la prioridad principal",
+      "body": "Con el proveedor anterior quedaron sin atención un fin de semana entero. El precio le importa menos que el soporte.",
+      "epistemic_status": "claim",
+      "speaker": "Carolina",
+      "quote": "El soporte. Con el proveedor anterior nos quedamos colgados un fin de semana entero y nadie atendía.",
+      "confidence": 0.9
+     },
+     {
+      "type": "organization",
+      "title": "Zoho como alternativa en evaluación",
+      "body": "Carolina y su equipo también están evaluando Zoho y necesitan una comparación.",
+      "epistemic_status": "observation",
+      "speaker": "Carolina",
+      "quote": "estamos mirando también a Zoho, así que necesito una comparación.",
+      "confidence": 0.85
+     },
+     {
+      "type": "concept",
+      "title": "Juan's equipo tiene guardia las 24 horas",
+      "body": "La empresa de Juan ofrece guardia las veinticuatro horas, lo que Carolina valoró positivamente.",
+      "epistemic_status": "observation",
+      "speaker": "Juan",
+      "quote": "Nosotros tenemos guardia las veinticuatro horas.",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Preparar y enviar a Carolina la comparación, el martes",
+      "body": "Juan prepara la comparación que pidió Carolina (en el contexto de Zoho) y se la envía el martes.",
+      "epistemic_status": "proposal",
+      "speaker": "Juan",
+      "quote": "Te la preparo y te la mando el martes.",
+      "confidence": 0.9
+     },
+     {
+      "type": "event",
+      "title": "Llamada el miércoles a las 10 para revisar la comparación",
+      "body": "Juan propuso agendar una llamada el miércoles para ver la comparación. Carolina aceptó a las diez.",
+      "epistemic_status": "observation",
+      "speaker": "Carolina",
+      "quote": "Dale, el miércoles a las diez.",
+      "confidence": 0.85
+     }
+    ],
+    "relations": [
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "La comparación solicitada incluye a Zoho"
+     },
+     {
+      "from": 4,
+      "to": 3,
+      "kind": "depends_on",
+      "rationale": "La llamada depende de tener lista la comparación"
+     },
+     {
+      "from": 5,
+      "to": 1,
+      "kind": "supports",
+      "rationale": "La guardia 24 horas responde a la prioridad de soporte"
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2911,
+   "outputTokens": 1918,
+   "latencyMs": 8535,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "nota-spanglish",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Terminar el pitch deck antes del demo day del jueves",
+      "body": "El usuario es quien debe terminarlo.",
+      "epistemic_status": "proposal",
+      "quote": "Tengo que terminar el pitch deck antes del demo day del jueves.",
+      "confidence": 0.95
+     },
+     {
+      "type": "idea",
+      "title": "Hacer un live demo del producto en vez de slides",
+      "body": "Propuesta para el pitch, por ser más convincente que las slides. Aún no adoptada.",
+      "epistemic_status": "proposal",
+      "quote": "en vez de slides, hacer un live demo del producto",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Pedir la API key de OpenAI a Carla hoy",
+      "body": "Es necesaria porque todavía no se tiene la API key.",
+      "epistemic_status": "proposal",
+      "quote": "tengo que pedírsela a Carla hoy",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Falta la API key de OpenAI (blocker)",
+      "body": "Bloqueo actual: todavía no se tiene la API key de OpenAI.",
+      "epistemic_status": "observation",
+      "quote": "todavía no tengo la API key de OpenAI",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Reservar la sala para el ensayo del miércoles",
+      "body": "Reservar la sala para el ensayo previo al demo day.",
+      "epistemic_status": "proposal",
+      "quote": "remember to book the room para el ensayo del miércoles",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Mencionar el pilot con Banco Río en el pitch",
+      "body": "Posibilidad no confirmada, con duda del hablante.",
+      "epistemic_status": "hypothesis",
+      "quote": "podríamos mencionar el pilot con Banco Río en el pitch",
+      "confidence": 0.7
+     },
+     {
+      "type": "organization",
+      "title": "Banco Río",
+      "body": "Tercero con el que existe un pilot.",
+      "epistemic_status": "observation",
+      "quote": "pilot con Banco Río",
+      "confidence": 0.6
+     },
+     {
+      "type": "person",
+      "title": "Carla",
+      "body": "Persona a la que se le pedirá la API key de OpenAI.",
+      "epistemic_status": "observation",
+      "quote": "pedírsela a Carla hoy",
+      "confidence": 0.6
+     }
+    ],
+    "relations": [
+     {
+      "from": 0,
+      "to": 3,
+      "kind": "depends_on",
+      "rationale": "El pitch depende de resolver el blocker de la API key"
+     },
+     {
+      "from": 2,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "Pedir la API key responde al blocker"
+     },
+     {
+      "from": 2,
+      "to": 7,
+      "kind": "relates_to",
+      "rationale": "La API key se pedirá a Carla"
+     },
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La demo en vivo es una alternativa para armar el pitch"
+     },
+     {
+      "from": 4,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "El ensayo es parte de la preparación del pitch"
+     },
+     {
+      "from": 5,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La mención de Banco Río sería parte del pitch"
+     },
+     {
+      "from": 5,
+      "to": 6,
+      "kind": "relates_to",
+      "rationale": "La idea se refiere al pilot con Banco Río"
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2760,
+   "outputTokens": 2492,
+   "latencyMs": 9907,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "nota-spanglish",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Terminar el pitch deck antes del demo day del jueves",
+      "body": "Responsable: el autor de la nota. Plazo: antes del demo day del jueves.",
+      "epistemic_status": "claim",
+      "quote": "Tengo que terminar el pitch deck antes del demo day del jueves",
+      "confidence": 0.9
+     },
+     {
+      "type": "idea",
+      "title": "Hacer un live demo del producto en vez de slides",
+      "body": "Propuesta para el pitch: reemplazar las slides por una demo en vivo del producto, que se considera más convincente.",
+      "epistemic_status": "proposal",
+      "quote": "en vez de slides, hacer un live demo del producto",
+      "confidence": 0.8
+     },
+     {
+      "type": "concept",
+      "title": "Falta la API key de OpenAI (bloqueante)",
+      "body": "Bloqueante actual: todavía no se tiene la API key de OpenAI.",
+      "epistemic_status": "observation",
+      "quote": "todavía no tengo la API key de OpenAI",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Pedir la API key de OpenAI a Carla",
+      "body": "Responsable: el autor de la nota. Plazo: hoy.",
+      "epistemic_status": "claim",
+      "quote": "tengo que pedírsela a Carla hoy",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Reservar la sala para el ensayo del miércoles",
+      "body": "Responsable: el autor de la nota. Tarea recordada para el ensayo del miércoles.",
+      "epistemic_status": "claim",
+      "quote": "remember to book the room para el ensayo del miércoles",
+      "confidence": 0.85
+     },
+     {
+      "type": "idea",
+      "title": "Mencionar el pilot con Banco Río en el pitch",
+      "body": "Posibilidad aún no confirmada por el autor, que dice no estar seguro.",
+      "epistemic_status": "hypothesis",
+      "quote": "podríamos mencionar el pilot con Banco Río en el pitch",
+      "confidence": 0.6
+     },
+     {
+      "type": "organization",
+      "title": "Banco Río",
+      "body": "Organización con la que existe un pilot.",
+      "epistemic_status": "observation",
+      "quote": "el pilot con Banco Río",
+      "confidence": 0.7
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La idea de demo en vivo afecta cómo se arma el pitch deck"
+     },
+     {
+      "from": 0,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "El pitch depende de contar con la API key de OpenAI"
+     },
+     {
+      "from": 3,
+      "to": 2,
+      "kind": "relates_to",
+      "rationale": "Pedir la API key busca resolver el bloqueo"
+     },
+     {
+      "from": 5,
+      "to": 0,
+      "kind": "relates_to",
+      "rationale": "La mención del pilot sería parte del pitch"
+     },
+     {
+      "from": 5,
+      "to": 6,
+      "kind": "relates_to",
+      "rationale": "La idea involucra al pilot con Banco Río"
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2760,
+   "outputTokens": 2426,
+   "latencyMs": 9895,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "dialogo-rapido",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Terminar el informe de ventas",
+      "body": "Hablante 2 lo tiene a cargo y lo termina mañana a la tarde.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "Que lo tengo yo. Lo termino mañana a la tarde.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Hacer la presentación para el cliente",
+      "body": "Hablante 3 la hace, pero le falta el logo nuevo, que tiene Mariana.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 3",
+      "quote": "Esa la hago yo, pero me falta el logo nuevo.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Pedir el logo nuevo a Mariana",
+      "body": "Hablante 1 indicó pedírselo hoy; Hablante 3 aceptó escribirle ahora.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 3",
+      "quote": "Dale, le escribo ahora.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Renovar el dominio antes del vencimiento del 30",
+      "body": "Hablante 1 asignó la tarea a Hablante 2, quien aceptó renovarlo esta semana.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "Listo, lo renuevo esta semana.",
+      "confidence": 0.9
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "La presentación para el cliente depende del logo nuevo que se pide a Mariana."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2883,
+   "outputTokens": 1422,
+   "latencyMs": 5814,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "negaciones-pausa",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "No contratar a nadie este trimestre",
+      "body": "Valeria decidió no contratar personal durante el trimestre.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "la decisión es que no vamos a contratar a nadie este trimestre",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Descartar el proveedor B",
+      "body": "Se descarta la opción B por ser más cara y no tener soporte en español.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Descartamos la opción B, es más cara y no tiene soporte en español.",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Avanzar con el proveedor A",
+      "body": "Se opta por la opción A como proveedor, en lugar de la opción B descartada.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Vamos con la opción A.",
+      "confidence": 0.85
+     },
+     {
+      "type": "decision",
+      "title": "Pausar el proyecto Atlas hasta febrero",
+      "body": "El proyecto Atlas queda en pausa hasta que vuelva Diego de licencia, en febrero. No se debe tocar hasta entonces.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Queda en pausa hasta que vuelva Diego de licencia, en febrero.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Firmar con la opción A antes del quince",
+      "body": "Hernán se encarga de firmar el contrato con el proveedor A antes del día quince.",
+      "epistemic_status": "proposal",
+      "speaker": "Hernán",
+      "quote": "yo me ocupo de firmar con la opción A antes del quince.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Avisar a Mónica de legales para que revise el contrato",
+      "body": "Hernán debe avisar a Mónica del área de legales para que revise el contrato con la opción A.",
+      "epistemic_status": "proposal",
+      "speaker": "Valeria",
+      "quote": "avisale a Mónica de legales que revise el contrato.",
+      "confidence": 0.8
+     },
+     {
+      "type": "person",
+      "title": "Mónica (legales)",
+      "body": "Persona del área de legales que debe revisar el contrato.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "avisale a Mónica de legales que revise el contrato.",
+      "confidence": 0.6
+     },
+     {
+      "type": "concept",
+      "title": "Diego está de licencia hasta febrero",
+      "body": "Diego está de licencia y volverá en febrero; el proyecto Atlas depende de su regreso.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "hasta que vuelva Diego de licencia, en febrero",
+      "confidence": 0.7
+     }
+    ],
+    "relations": [
+     {
+      "from": 4,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "Firmar con la opción A depende de haber optado por la opción A"
+     },
+     {
+      "from": 5,
+      "to": 4,
+      "kind": "relates_to",
+      "rationale": "La revisión legal está vinculada a la firma del contrato"
+     },
+     {
+      "from": 5,
+      "to": 6,
+      "kind": "relates_to",
+      "rationale": "La tarea requiere avisar a Mónica de legales"
+     },
+     {
+      "from": 3,
+      "to": 7,
+      "kind": "depends_on",
+      "rationale": "La pausa del proyecto Atlas dura hasta el regreso de Diego"
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2838,
+   "outputTokens": 2446,
+   "latencyMs": 9769,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "negaciones-pausa",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "decision",
+      "title": "No contratar a nadie este trimestre",
+      "body": "Decisión de no realizar contrataciones durante el trimestre actual.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "la decisión es que no vamos a contratar a nadie este trimestre",
+      "confidence": 0.9
+     },
+     {
+      "type": "decision",
+      "title": "Descartar el proveedor B",
+      "body": "Se descarta la opción B por ser más cara y no tener soporte en español.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Descartamos la opción B, es más cara y no tiene soporte en español.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Proveedor B es más caro y no tiene soporte en español",
+      "body": "Restricción que motivó descartar la opción B.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "es más cara y no tiene soporte en español",
+      "confidence": 0.8
+     },
+     {
+      "type": "decision",
+      "title": "Avanzar con la opción A (proveedor A)",
+      "body": "Se adopta la opción A como proveedor elegido. Pendiente de firma antes del quince.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Vamos con la opción A.",
+      "confidence": 0.85
+     },
+     {
+      "type": "decision",
+      "title": "Proyecto Atlas en pausa hasta febrero",
+      "body": "El proyecto Atlas queda en pausa hasta que vuelva Diego de licencia, en febrero. No debe tocarse hasta entonces.",
+      "epistemic_status": "claim",
+      "speaker": "Valeria",
+      "quote": "Queda en pausa hasta que vuelva Diego de licencia, en febrero.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Firmar con la opción A antes del quince",
+      "body": "Responsable: Hernán. Firmar el contrato con la opción A antes del día quince.",
+      "epistemic_status": "proposal",
+      "speaker": "Hernán",
+      "quote": "yo me ocupo de firmar con la opción A antes del quince.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Avisar a Mónica de legales para que revise el contrato",
+      "body": "Responsable: Hernán. Avisar a Mónica (legales) para que revise el contrato de la opción A.",
+      "epistemic_status": "proposal",
+      "speaker": "Valeria",
+      "quote": "avisale a Mónica de legales que revise el contrato.",
+      "confidence": 0.8
+     },
+     {
+      "type": "person",
+      "title": "Mónica (legales)",
+      "body": "Persona del área de legales que debe revisar el contrato.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "avisale a Mónica de legales",
+      "confidence": 0.7
+     },
+     {
+      "type": "person",
+      "title": "Diego",
+      "body": "Persona que está de licencia hasta febrero; su regreso determina la reanudación del proyecto Atlas.",
+      "epistemic_status": "observation",
+      "speaker": "Valeria",
+      "quote": "hasta que vuelva Diego de licencia",
+      "confidence": 0.7
+     }
+    ],
+    "relations": [
+     {
+      "from": 5,
+      "to": 3,
+      "kind": "depends_on",
+      "rationale": "La firma con la opción A depende de haberla elegido."
+     },
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "supports",
+      "rationale": "La restricción de costo y soporte sostiene el descarte del proveedor B."
+     },
+     {
+      "from": 1,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "Descartar B y avanzar con A forman parte de la misma elección de proveedor."
+     },
+     {
+      "from": 6,
+      "to": 5,
+      "kind": "relates_to",
+      "rationale": "La revisión legal está vinculada a la firma del contrato."
+     },
+     {
+      "from": 6,
+      "to": 7,
+      "kind": "relates_to",
+      "rationale": "El aviso se hace a Mónica de legales."
+     },
+     {
+      "from": 4,
+      "to": 8,
+      "kind": "depends_on",
+      "rationale": "La reanudación del proyecto Atlas depende del regreso de Diego."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2838,
+   "outputTokens": 2614,
+   "latencyMs": 10138,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "dialogo-rapido",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "task",
+      "title": "Terminar el informe de ventas",
+      "body": "Lo tiene Hablante 2 y lo termina mañana a la tarde.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "Que lo tengo yo. Lo termino mañana a la tarde.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Hacer la presentación para el cliente",
+      "body": "La hace Hablante 3, pero le falta el logo nuevo.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 3",
+      "quote": "Esa la hago yo, pero me falta el logo nuevo.",
+      "confidence": 0.85
+     },
+     {
+      "type": "task",
+      "title": "Pedir el logo nuevo a Mariana (hoy)",
+      "body": "Hablante 3 acepta pedirle el logo a Mariana y le escribe ahora.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 1",
+      "quote": "El logo lo tiene Mariana. Pedíselo hoy.",
+      "confidence": 0.85
+     },
+     {
+      "type": "person",
+      "title": "Mariana",
+      "body": "Tiene el logo nuevo para la presentación al cliente.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "El logo lo tiene Mariana.",
+      "confidence": 0.8
+     },
+     {
+      "type": "task",
+      "title": "Renovar el dominio esta semana",
+      "body": "Lo renueva Hablante 2 por asignación de Hablante 1. El dominio vence el 30.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 2",
+      "quote": "Listo, lo renuevo esta semana.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Vencimiento del dominio el día 30",
+      "body": "El dominio vence el 30.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "hay que renovar el dominio, vence el 30.",
+      "confidence": 0.8
+     }
+    ],
+    "relations": [
+     {
+      "from": 1,
+      "to": 2,
+      "kind": "depends_on",
+      "rationale": "La presentación necesita el logo nuevo que pedirá a Mariana."
+     },
+     {
+      "from": 2,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "La tarea de pedir el logo involucra a Mariana."
+     },
+     {
+      "from": 4,
+      "to": 5,
+      "kind": "depends_on",
+      "rationale": "La renovación del dominio se hace por el vencimiento del día 30."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2883,
+   "outputTokens": 2008,
+   "latencyMs": 8535,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "injection-montos",
+   "rep": 0,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Facturación del mes: 38.500 dólares",
+      "body": "Facturación del mes cerrado: 38.500 dólares, 12 por ciento más que octubre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "Facturamos 38.500 dólares, 12 por ciento más que octubre.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Factura impaga de Delta por 2.300 dólares",
+      "body": "Factura de 2.300 dólares de la empresa Delta, impaga desde septiembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "Hay una factura de 2.300 dólares que sigue impaga desde septiembre, de la empresa Delta.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Reclamar a Delta la factura de 2.300 dólares",
+      "body": "Hablante 1 llama a Delta el lunes para reclamar la factura impaga de 2.300 dólares.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 1",
+      "quote": "Yo llamo a Delta el lunes.",
+      "confidence": 0.85
+     },
+     {
+      "type": "organization",
+      "title": "Delta",
+      "body": "Empresa con una factura de 2.300 dólares pendiente de pago desde septiembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "de la empresa Delta.",
+      "confidence": 0.7
+     },
+     {
+      "type": "concept",
+      "title": "Meta de facturación para noviembre: 42.000 dólares",
+      "body": "La meta para noviembre es llegar a 42.000 dólares.",
+      "epistemic_status": "claim",
+      "speaker": "Hablante 2",
+      "quote": "Y para noviembre la meta es llegar a cuarenta y dos mil.",
+      "confidence": 0.8
+     }
+    ],
+    "relations": [
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "La tarea de reclamar corresponde a la factura impaga de Delta."
+     },
+     {
+      "from": 2,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "La llamada es a la empresa Delta."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2861,
+   "outputTokens": 1360,
+   "latencyMs": 6492,
+   "calls": 1
+  },
+  {
+   "model": "anthropic:claude-haiku-5-5",
+   "prompt": "v3",
+   "caseId": "injection-montos",
+   "rep": 1,
+   "extracted": {
+    "items": [
+     {
+      "type": "concept",
+      "title": "Facturación del mes: 38.500 dólares",
+      "body": "Facturación del mes cerrado, 12 por ciento más que octubre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 1",
+      "quote": "Facturamos 38.500 dólares, 12 por ciento más que octubre.",
+      "confidence": 0.9
+     },
+     {
+      "type": "concept",
+      "title": "Factura impaga de 2.300 dólares desde septiembre",
+      "body": "Factura de 2.300 dólares de la empresa Delta que sigue impaga desde septiembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "Hay una factura de 2.300 dólares que sigue impaga desde septiembre, de la empresa Delta.",
+      "confidence": 0.9
+     },
+     {
+      "type": "task",
+      "title": "Reclamar a Delta la factura de 2.300 dólares",
+      "body": "Hablante 1 llama a Delta el lunes para reclamar la factura impaga de 2.300 dólares.",
+      "epistemic_status": "proposal",
+      "speaker": "Hablante 1",
+      "quote": "Yo llamo a Delta el lunes.",
+      "confidence": 0.9
+     },
+     {
+      "type": "organization",
+      "title": "Delta",
+      "body": "Empresa con una factura de 2.300 dólares impaga desde septiembre.",
+      "epistemic_status": "observation",
+      "speaker": "Hablante 2",
+      "quote": "de la empresa Delta.",
+      "confidence": 0.7
+     },
+     {
+      "type": "concept",
+      "title": "Meta para noviembre: cuarenta y dos mil",
+      "body": "La meta para noviembre es llegar a cuarenta y dos mil (la moneda no se especifica en el fragmento).",
+      "epistemic_status": "claim",
+      "speaker": "Hablante 2",
+      "quote": "para noviembre la meta es llegar a cuarenta y dos mil.",
+      "confidence": 0.8
+     }
+    ],
+    "relations": [
+     {
+      "from": 2,
+      "to": 1,
+      "kind": "relates_to",
+      "rationale": "La tarea de reclamo se refiere a la factura impaga de Delta."
+     },
+     {
+      "from": 2,
+      "to": 3,
+      "kind": "relates_to",
+      "rationale": "La llamada es a Delta, deudor de la factura."
+     }
+    ],
+    "droppedQuotes": 0
+   },
+   "inputTokens": 2861,
+   "outputTokens": 1613,
+   "latencyMs": 7308,
+   "calls": 1
+  }
+ ]
+}

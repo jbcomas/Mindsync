@@ -1,0 +1,19 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_dev
+      POSTGRES_DB: mindsync
+    ports:
+      - "54329:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+      - ./docker/initdb:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d mindsync"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+volumes:
+  dbdata:
